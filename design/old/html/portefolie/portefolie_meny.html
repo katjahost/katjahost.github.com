@@ -1,0 +1,177 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Katja H&oslash;st</title>
+		<script language="JavaScript"><!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+// -->
+		</script>
+		<csscriptdict>
+			<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'kontakt',/*URL*/'../../gif/4.gif',/*URL*/'../../gif/44.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'web',/*URL*/'../../gif/web1.gif',/*URL*/'../../gif/web2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'flash',/*URL*/'../../gif/flash1.gif',/*URL*/'../../gif/flash2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'print',/*URL*/'../../gif/print1.gif',/*URL*/'../../gif/print2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'cv',/*URL*/'../../gif/6.gif',/*URL*/'../../gif/66.gif',/*URL*/'','');
+
+// --></script>
+		</csactiondict></head>
+
+	<body topmargin="100" bgcolor="#dcdb6b" text="black" onLoad="CSScriptInit();MM_preloadImages('../../gif/66.gif','../../gif/44.gif','../../gif/flash2.gif','../../gif/print2.gif')">
+		<table width="245" border="0" cellspacing="0" cellpadding="0" height="96%" align="right">
+	  <tr>
+				<td valign="bottom">
+					<table border="0" align="right" cellpadding="0" cellspacing="0" width="0" height="0">
+						<tr height="44">
+							<td height="44" width="100"><img src="../../gif/1.gif" width="110" height="90"></td>
+							<td height="44" width="131"><img src="../../gif/2.gif" width="131" height="90" name="portefolie" border="0"></td>
+							<td rowspan="3" width="66"><img src="../../gif/space.gif" width="30" height="30"></td>
+						</tr>
+						<tr>
+							<td width="100"><img src="../../gif/3_alt.gif" width="110" height="72"></td>
+							<td width="131"><a href="../kontakt_frame.html" target="_top" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kontakt','','../../gif/44.gif',1)"><csobj w="131" h="72" t="Button" ht="../../gif/44.gif"><a href="../kontakt.html" target="_top" onmouseover="return CSIShow(/*CMP*/'kontakt',1)" onmouseout="return CSIShow(/*CMP*/'kontakt',0)" onclick="return CSButtonReturn()"><img src="../../gif/4.gif" width="131" height="72" name="kontakt" border="0"></a></csobj></a></td>
+						</tr>
+						<tr>
+							<td width="100"><csobj w="110" h="21" t="Button" ht="../../gif/web2.gif">							  <a href="portefolie_web_02.html" target="contentframe" onMouseOver="return CSIShow(/*CMP*/'web',1)" onMouseOut="return CSIShow(/*CMP*/'web',0)" onClick="return CSButtonReturn()"><img src="../../gif/web1.gif" width="110" height="21" name="web" border="0">
+						    </csobj></a><a href="portefolie_flash_02.html" target="contentframe" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('flash','','../../gif/flash2.gif',1)"><csobj w="110" h="15" t="Button" ht="../../gif/flash2.gif"><a href="portefolie_flash.html" target="contentframe" onmouseover="return CSIShow(/*CMP*/'flash',1)" onmouseout="return CSIShow(/*CMP*/'flash',0)" onclick="return CSButtonReturn()"><img src="../../gif/flash1.gif" width="110" height="15" name="flash" border="0"></a></csobj></a><a href="portefolie_print_02.html" target="contentframe" onMouseOver="MM_swapImage('print','','../../gif/print2.gif',1)" onMouseOut="MM_swapImgRestore()"><csobj w="110" h="25" t="Button" ht="../../gif/print2.gif"><a href="portefolie_print_02.html" target="contentframe" onmouseover="return CSIShow(/*CMP*/'print',1)" onmouseout="return CSIShow(/*CMP*/'print',0)" onclick="return CSButtonReturn()"><img src="../../gif/print1.gif" width="110" height="25" name="print" border="0"></a></csobj></a></td>
+							<td width="131"><a href="../cv_frame.html" target="_top" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cv','','../../gif/66.gif',1)"><csobj w="131" h="61" t="Button" ht="../../gif/66.gif"><a href="../cv_frame.html" target="_top" onmouseover="return CSIShow(/*CMP*/'cv',1)" onmouseout="return CSIShow(/*CMP*/'cv',0)" onclick="return CSButtonReturn()"><img src="../../gif/6.gif" width="131" height="61" name="cv" border="0"></a></csobj></a></td>
+						</tr>
+						<tr>
+							<td colspan="3"><img src="../../gif/7.gif" width="110" height="18"></td>
+						</tr>
+						<tr>
+							<td colspan="3"><img src="../../gif/space.gif" width="30" height="12"></td>
+						</tr>
+					</table>
+					<center>
+						<p>
+				</center></td>
+			</tr>
+		</table>
+	<center>
+	  <p>
+      
+	</center></body>
+
+</html>

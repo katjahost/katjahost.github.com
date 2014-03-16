@@ -1,0 +1,2 @@
+kategorier_heading=Kategorier&vis_kategorier=performance
+multipler
