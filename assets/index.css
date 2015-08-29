@@ -223,10 +223,13 @@ li:focus {
 	}
 		.footer-contact span {
 			display: inline-block;
-			padding: 0 0.4em;
+			padding: 0 0.6em;
 		}
 		.footer-contact span:first-child {
 			padding-left: 0;
+		}
+		.footer-contact span:last-child {
+			padding-right: 0;
 		}
 
 @media screen and (max-width: 40em) {
