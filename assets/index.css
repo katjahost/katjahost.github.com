@@ -131,6 +131,9 @@ h1 {
 h2 {
 	font-size: 1.2em;
 }
+h3 {
+	margin: 0 0 0.6em;
+}
 p {
 	margin-top: 0;
 }
@@ -186,14 +189,16 @@ li:focus {
 			text-align: right;
 			text-transform: uppercase;
 		}
-			.nav-item__anchor {
+			.nav-item__anchor,
+			.nav-item__selected {
 				color: #333;
 				padding: 0.4em 1em;
 				transition: all 200ms ease-out;
 			}
 			.nav-item__anchor:hover,
 			.nav-item__anchor:focus,
-			.nav-item__anchor:active {
+			.nav-item__anchor:active,
+			.nav-item__selected {
 				background-color: #333;
 				color: white;
 			}
@@ -203,16 +208,20 @@ li:focus {
 	margin: 0 auto 2em;
 	max-width: 60em;
 }
-	.about-text {
+	.about-text,
+	.cv-text {
 		background-color: rgba(219,223,225,0.5);
-		max-width: 40em;
 		padding: 1em 1em 0.1em;
+		max-width: 40em;
+	}
+	.cv-text ul {
+		margin-bottom: 1em;
 	}
 
 /* Footer */
 .footer {
 	color: white;
-	padding: 0 2em;
+	padding: 0 2em 0.6em;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 	.footer-copyright {
