@@ -107,12 +107,11 @@ body {
 	width: 100%;
 }
 html {
-	background-color: white;
+	background: white url('images/bg.jpg') center no-repeat fixed;
+	background-size: cover;
 }
 body {
 	color: #333;
-	background: url('images/bg.jpg') center no-repeat fixed;
-	background-size: cover;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	font-variant: normal;
@@ -133,8 +132,7 @@ h2 {
 	font-size: 1.2em;
 }
 p {
-	max-width: 40em;
-	text-shadow: 0 1px 1px rgba(255,255,255,1);
+	margin-top: 0;
 }
 a {
 	color: #fc1f70;
@@ -154,20 +152,28 @@ li:focus {
 }
 
 #viewport {
-	margin: 0 auto;
-	max-width: 60em;
+	margin: 0 auto -2em;
+	min-height: 100%;
+	overflow: hidden;
 	padding: 2em;
+}
+#viewport:after,
+.footer {
+	clear: both;
 }
 
 /* Header */
 .header {
 	line-height: 1.2;
-	margin-bottom: 2em;
+	margin: 0 auto 2em;
+	max-width: 60em;
 	padding: 1em 0;
 	position: relative;
 }
 	.header-group {
 		border-left: 4px solid #333;
+		color: #333;
+		display: block;
 		padding-left: 0.6em;
 	}
 	.nav {
@@ -182,9 +188,71 @@ li:focus {
 		}
 			.nav-item__anchor {
 				color: #333;
-				padding: 0 1em;
+				padding: 0.4em 1em;
+				transition: all 200ms ease-out;
+			}
+			.nav-item__anchor:hover,
+			.nav-item__anchor:focus,
+			.nav-item__anchor:active {
+				background-color: #333;
+				color: white;
 			}
 
 /* Content */
 .content {
+	margin: 0 auto 2em;
+	max-width: 60em;
+}
+	.about-text {
+		background-color: rgba(219,223,225,0.5);
+		max-width: 40em;
+		padding: 1em 1em 0.1em;
+	}
+
+/* Footer */
+.footer {
+	color: white;
+	padding: 0 2em;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+	.footer-copyright {
+		font-weight: 400;
+	}
+	.footer-contact {
+		float: right;
+	}
+		.footer-contact span {
+			display: inline-block;
+			padding: 0 0.4em;
+		}
+		.footer-contact span:first-child {
+			padding-left: 0;
+		}
+
+@media screen and (max-width: 40em) {
+	#viewport {
+		margin-bottom: -6.6em;
+		padding-bottom: 6.6em;
+	}
+	.footer {
+		padding-bottom: 1em;
+	}
+	.footer-contact {
+		display: block;
+		float: none;
+	}
+	.footer-contact span {
+		display: block;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 28em) {
+	#viewport {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.footer {
+		padding: 0 1em 1em;
+	}
 }
