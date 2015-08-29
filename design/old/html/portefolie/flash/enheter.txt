@@ -1,1 +1,0 @@
-antall_enheter=4

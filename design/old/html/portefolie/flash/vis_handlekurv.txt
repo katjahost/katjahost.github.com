@@ -1,4 +1,0 @@
-varer=Knut Åsdam
-Camilla Martens&antall=3
-1&antall_tot=4&pris_kurv=200,-
-30,000,-&pris_totkurv=30,200,-&gave=ja
