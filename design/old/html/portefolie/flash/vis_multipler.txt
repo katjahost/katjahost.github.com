@@ -1,4 +1,0 @@
-multipler_heading=Multipler&vis_multipler=cd nr1
-cd nr2
-cd nr3
-osv 
