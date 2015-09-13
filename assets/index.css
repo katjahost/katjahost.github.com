@@ -110,6 +110,10 @@ html {
 	background: white url('images/bg.jpg') center no-repeat fixed;
 	background-size: cover;
 }
+html.projects {
+	background-color: rgba(219,223,225,0.5);
+	background-image: none;
+}
 body {
 	color: #333;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -137,10 +141,17 @@ h3 {
 p {
 	margin-top: 0;
 }
-a {
+a,
+a:visited {
 	color: #fc1f70;
 	text-decoration: none;
 }
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: #fc1f70;
+		color: white;
+	}
 ul {
 	list-style: none;
 	margin: 0;
@@ -158,7 +169,7 @@ li:focus {
 	margin: 0 auto -2em;
 	min-height: 100%;
 	overflow: hidden;
-	padding: 2em;
+	padding: 2.4em 2.8em;
 }
 #viewport:after,
 .footer {
@@ -173,11 +184,16 @@ li:focus {
 	padding: 1em 0;
 	position: relative;
 }
-	.header-group {
+	a.header-group {
 		border-left: 4px solid #333;
 		color: #333;
-		display: block;
+		display: inline-block;
 		padding-left: 0.6em;
+	}
+	a.header-group:hover,
+	a.header-group:active,
+	a.header-group:focus {
+		background-color: transparent;
 	}
 	.nav {
 		margin-right: -1em;
@@ -190,7 +206,8 @@ li:focus {
 			text-transform: uppercase;
 		}
 			.nav-item__anchor,
-			.nav-item__selected {
+			.nav-item__selected,
+			.nav-item__anchor:visited {
 				color: #333;
 				padding: 0.4em 1em;
 				transition: all 200ms ease-out;
@@ -211,18 +228,52 @@ li:focus {
 	.about-text,
 	.cv-text {
 		background-color: rgba(219,223,225,0.5);
-		padding: 1em 1em 0.1em;
+		padding: 1.2em 1.2em 0.1em;
 		max-width: 40em;
 	}
 	.cv-text ul {
-		margin-bottom: 1em;
+		margin-bottom: 1.2em;
 	}
+	.nav-projects {
+		margin-bottom: 1.2em;
+	}
+		.nav-projects-item a {
+			padding: 0.2em;
+		}
+		.nav-projects-item:before {
+			content: '#';
+			display: inline-block;
+		}
+	.project {
+		padding-bottom: 2.4em;
+	}
+		.viewer {
+			margin-bottom: 1em;
+			overflow-x: auto;
+			overflow-y: hidden;
+			position: relative;
+			white-space: nowrap;
+			width: 100%;
+			-webkit-overflow-scrolling: touch;
+		}
+			.viewer-image {
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+			}
+				.viewer-image img {
+					width: 100%;
+				}
 
 /* Footer */
 .footer {
 	color: white;
 	padding: 0 2em 0.6em;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.projects .footer {
+	color: #333;
+	text-shadow: none;
 }
 	.footer-copyright {
 		font-weight: 400;
