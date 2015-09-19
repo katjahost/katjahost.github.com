@@ -158,7 +158,7 @@ ul {
 	padding: 0;
 }
 li {
-	display: inline-block;
+	display: block;
 	margin: 0;
 }
 li:focus {
@@ -202,6 +202,7 @@ li:focus {
 		bottom: 1.1em;
 	}
 		.nav-item {
+			display: inline-block;
 			text-align: right;
 			text-transform: uppercase;
 		}
@@ -237,13 +238,16 @@ li:focus {
 	.nav-projects {
 		margin-bottom: 1.2em;
 	}
-		.nav-projects-item a {
-			padding: 0.2em;
+		.nav-projects-item {
+			display: inline-block;
 		}
 		.nav-projects-item:before {
 			content: '#';
 			display: inline-block;
 		}
+			.nav-projects-item a {
+				padding: 0.2em;
+			}
 	.project {
 		padding-bottom: 5.4em;
 	}
