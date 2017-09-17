@@ -180,7 +180,7 @@ li:focus {
 .header {
 	line-height: 1.2;
 	margin: 0 auto 2em;
-	max-width: 60em;
+	max-width: 50em;
 	padding: 1em 0;
 	position: relative;
 }
@@ -224,7 +224,7 @@ li:focus {
 /* Content */
 .content {
 	margin: 0 auto 2em;
-	max-width: 60em;
+	max-width: 50em;
 }
 	.about-text,
 	.cv-text {
