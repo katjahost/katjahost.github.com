@@ -262,6 +262,7 @@ li:focus {
 		}
 			.viewer-image {
 				display: inline-block;
+				margin-right: 4px;
 				vertical-align: top;
 				width: 100%;
 			}
